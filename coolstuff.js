@@ -91,20 +91,20 @@ function heroScroll(wScroll){
     var heroNameDiff = $('#hero-name').outerHeight();
     var halfScreen = $(window).height()/2;
     var checkerNum = (halfScreen + heroNameDiff) - 250;
+    var scrollSum = wScroll-checkerNum;
+    
     if(wScroll < checkerNum ){
         $('#hero-name').css({
-            'transform' : 'translate(0px, '+ wScroll +'px)',
-            '-webkit-transform' : 'translate(0px, '+ wScroll +'px)',
-            '-ms-transform' : 'translate(0px, '+ wScroll +'px)' 
+            'transform' : 'translate(0px, 0px)',
+            '-webkit-transform' : 'translate(0px, 0px)',
+            '-ms-transform' : 'translate(0px, 0px)' 
         });
- 
-        
     }
     else if(wScroll > checkerNum){ 
         $('#hero-name').css({
-        'transform' : 'translate(0px, '+ checkerNum +'px)',
-        '-webkit-transform' : 'translate(0px, '+ checkerNum +'px)',
-        '-ms-transform' : 'translate(0px, '+ checkerNum +'px)', 
+        'transform' : 'translate(0px, -'+ scrollSum +'px)',
+        '-webkit-transform' : 'translate(0px, -'+ scrollSum +'px)',
+        '-ms-transform' : 'translate(0px, -'+ scrollSum +'px)', 
         });
     };
 };
