@@ -11,7 +11,7 @@ p{
 }
 
 body{
-    //background-color: #eee;
+    background-color: #eee;
     background-image: url(yosemite-purp%20copy.png);
     background-attachment: fixed;
     background-size: cover;
@@ -29,10 +29,7 @@ h3{font-size: 22px}
     padding-left:50px;
     padding-right:50px;
 }
-ul{
-    list-style: none;
-    text-align: center;
-}
+ul {list-style: none; text-align: center;}
 
 header #slideout{
     width: 105px; 
@@ -110,6 +107,7 @@ header a.circle-link{
 
 #section-wrapper{
     width: 100%;
+    overflow: hidden;
 }
 section{
     width: 100%;
@@ -127,7 +125,7 @@ section .content{
     padding-top: 100px;
     padding-bottom: 100px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px 0px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     //background-color: #fafafa;
     background-color:  rgba(255, 255, 255, 0.9);
      -webkit-transition: all 0.7s ease-in-out;
@@ -135,20 +133,7 @@ section .content{
 section .content-hidden{
     transform: translateX(-200%);    
 }
-section .content-center{
-    width: 100%;
-    top: 0px;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;   
-}
+
 .center{
     text-align: center;
     display: block;
@@ -157,7 +142,7 @@ section .content-center{
 }
 .w-border{
     padding: 30px 60px 30px 60px;
-    //border: 2px solid #8560a8;
+    border: 2px solid #8560a8;
 }
 .flexbox{
     display: -webkit-box;
@@ -190,6 +175,13 @@ section .content-center{
 #hero{
     height: 100vh;
 }
+#hero .heroScroll{
+    position: fixed;
+    top: 50%;
+    margin-top: -45px;
+    width: 100%;
+}
+
 
 
 #about .mugshot{
