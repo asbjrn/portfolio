@@ -107,11 +107,7 @@ header a.circle-link{
 
 #section-wrapper{
     width: 100%;
-<<<<<<< Updated upstream
-    overflow: hidden;
-=======
     overflow-x: hidden;
->>>>>>> Stashed changes
 }
 section{
     width: 100%;
