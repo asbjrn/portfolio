@@ -107,11 +107,16 @@ header a.circle-link{
 
 #section-wrapper{
     width: 100%;
+<<<<<<< Updated upstream
     overflow: hidden;
+=======
+    overflow-x: hidden;
+>>>>>>> Stashed changes
 }
 section{
     width: 100%;
     position: relative;
+    
 }
 section .content{
     //max-width: 750px;
@@ -129,8 +134,11 @@ section .content{
     //background-color: #fafafa;
     background-color:  rgba(255, 255, 255, 0.9);
      -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 section .content-hidden{
+    -webkit-transform: translateX(-200%); 
+    -ms-transform: translateX(-200%); 
     transform: translateX(-200%);    
 }
 
@@ -468,28 +476,28 @@ span.one-of-eight{
     cursor: pointer;
 }
 #work .showroom{
-    position: absolute;
+    position: absolute;  
+    max-height: 100vh;  
     top: 0px;
     max-width: 850px;
     width: 95%;
+    padding: 100px 70px 100px 70px;
     right: -100%;
     box-sizing: border-box;   
     text-align: center;
-    padding: 70px;
-    padding-top: 100px;
-    padding-bottom: 100px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px 0px;
     background-color:  rgba(255, 255, 255, 0.9);
-     -webkit-transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
     overflow: hidden;
-    max-height: 100vh;
-    
+    margin-bottom: 70px;
 }
 #work .showroom-visible{
     right: 50%;
+    -webkit-transform: translateX(50%); 
+    -ms-transform: translateX(50%); 
     transform: translateX(50%);
-    max-height: none;
-    overflow: auto;
+    max-height: none; 
 }
 
 #email .content {
