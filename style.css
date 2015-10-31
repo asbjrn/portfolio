@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "open sans", "arial"
+}
+
+header{
+    padding-left: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+     background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22500%22%3E%3Crect%20x%3D%220%22%20width%3D%2256%22%20height%3D%22100%25%22%20style%3D%22fill%3A%2328a1d8%22%2F%3E%3Crect%20x%3D%2256%22%20width%3D%2229%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23248bc7%22%2F%3E%3Crect%20x%3D%2285%22%20width%3D%2220%22%20height%3D%22100%25%22%20style%3D%22fill%3A%231e3955%22%2F%3E%3Crect%20x%3D%22105%22%20width%3D%2268%22%20height%3D%22100%25%22%20style%3D%22fill%3A%232f5132%22%2F%3E%3Crect%20x%3D%22173%22%20width%3D%2219%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23416828%22%2F%3E%3Crect%20x%3D%22192%22%20width%3D%2241%22%20height%3D%22100%25%22%20style%3D%22fill%3A%237eaa29%22%2F%3E%3Crect%20x%3D%22233%22%20width%3D%2221%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23dcbd42%22%2F%3E%3Crect%20x%3D%22254%22%20width%3D%2277%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23dcad27%22%2F%3E%3Crect%20x%3D%22331%22%20width%3D%228%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23e39a23%22%2F%3E%3Crect%20x%3D%22339%22%20width%3D%2223%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23cc554c%22%2F%3E%3Crect%20x%3D%22362%22%20width%3D%2259%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23ca473f%22%2F%3E%3Crect%20x%3D%22421%22%20width%3D%229%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23a72834%22%2F%3E%3Crect%20x%3D%22430%22%20width%3D%224%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23735675%22%2F%3E%3Crect%20x%3D%22434%22%20width%3D%2257%22%20height%3D%22100%25%22%20style%3D%22fill%3A%23653e66%22%2F%3E%3Crect%20x%3D%22491%22%20width%3D%229%22%20height%3D%22100%25%22%20style%3D%22fill%3A%233b315b%22%2F%3E%3C%2Fsvg%3E%0A);
+    //width: 100%;
+}
+header h1{
+text-align: center;
+font-size: 48px;}
+
+body{background-color: #ebebeb;}
+
+#wrapper{
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#slider-wrapper {
+    width: 120px;
+}
+#slideout{
+    width: 120px; 
+    /*remember to change the wrapper & modal if the width is changed*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px 0px;
+}
+#slideout ul{
+    list-style: none;
+    text-align: right;
+}
+#slideout li{
+    padding-top: 10px;
+    padding-right:10px;
+}
+#slideout a{color: #666;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#slideout a:hover{color: #222;}
+
+#modalviewer{  
+    //min-height: 100vh;
+    //background-color: rgba(1,1,1, 0.86);
+    //background-color: #ebebeb;
+    position: absolute;
+    left: 120px;
+    /*remember to change the javascript if the offset is changed*/
+    z-index: 2;
+    display: none;
+}
+
+#modalviewer img{
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*remember to change the javascript if the margins are changed*/
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 6px 0px;
+    border: 4px solid white;
+    box-sizing: border-box;
+}
+
+section#images{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding:35px;
+}
+section#images img{
+    width: 100%;
+    border: 4px solid white;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px 0px;  
+}
+
+#leftside{
+    width: 50%;
+    padding: 5px;
+    
+}
+#rightside{
+    width: 50%;
+    padding: 5px;
+}
+
+
+
+
+
+
+
