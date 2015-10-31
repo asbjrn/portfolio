@@ -14,12 +14,10 @@ function toggleMenu(){
         if($("#slideout").hasClass("isHidden")){
             $("#slideout").removeClass("isHidden");
             $("#slideout").addClass("isVisible");
-            console.log("a");
         }
         else{
             $("#slideout").addClass("isHidden");
             $("#slideout").removeClass("isVisible");
-              console.log("b");
         };
     });
 }
@@ -45,9 +43,8 @@ function toggleShowroom(){
     var scrollOffset;
     var sectionTopOffset;
 
-    $(".case-overlay").click(function(){
-        
-        scrollOffset = $("body").scrollTop();
+    $(".case-overlay").click(function(){ 
+        scrollOffset = $(document).scrollTop();
         sectionTopOffset = $("#work").offset().top;
         var positionDifference = scrollOffset - sectionTopOffset 
         var thisCase = $(this).parent().attr('id');
@@ -56,6 +53,7 @@ function toggleShowroom(){
         $("section .content").removeClass("content-visible"); 
         
         if(positionDifference >=0){
+            
              $("#"+thisCase+"-showroom").css({
             'top' : positionDifference+15+'px'
              });
@@ -65,19 +63,17 @@ function toggleShowroom(){
             'top' : '0px'
              });
         }
-        
     });
+    
     $(".showroom .close").click(function(){
-        var newscrollOffset = $("body").scrollTop();
-        var newPositionDifference = scrollOffset - newscrollOffset 
-        
+        var newscrollOffset = $(document).scrollTop();
+        var newPositionDifference = scrollOffset - newscrollOffset    
         var thisShowCase = $(this).parent().attr('id'); 
+        $("#"+thisShowCase).css({ 'top' : '0px' });  
         $("#"+thisShowCase).removeClass("showroom-visible");  
         $("section .content").removeClass("content-hidden"); 
-        $("section .content").addClass("content-visible");      
-        $("#"+thisShowCase).css({ 'top' : '0px' });          
-        $("body").scrollTop(scrollOffset);
-        
+        $("section .content").addClass("content-visible");    
+        $(document).scrollTop(scrollOffset);
     });
 }
 
