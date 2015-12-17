@@ -28,9 +28,14 @@ h3{font-size: 22px}
 #intro h2{
     font-size: 30px;
     font-weight: 300;
+<<<<<<< HEAD
     //padding-left:50px;
     //padding-right:50px;
     text-align: justify;
+=======
+    padding-left:50px;
+    padding-right:50px;
+>>>>>>> origin/gh-pages
 }
 ul {list-style: none; text-align: center;}
 
@@ -520,13 +525,17 @@ span.one-of-eight{
     transition: all 0.7s ease-in-out;
     overflow: hidden;
     margin-bottom: 70px;
+<<<<<<< HEAD
     z-index: 1;
+=======
+>>>>>>> origin/gh-pages
 }
 #work .showroom-visible{
     right: 50%;
     -webkit-transform: translateX(50%); 
     -ms-transform: translateX(50%); 
     transform: translateX(50%);
+<<<<<<< HEAD
     max-height: none;     
 }
 #work .showroom img{
@@ -579,6 +588,9 @@ span.one-of-eight{
 }
 #future #node{
     background-image: url(assets/node1.png)
+=======
+    max-height: none; 
+>>>>>>> origin/gh-pages
 }
 
 
